@@ -1,0 +1,6 @@
+:root{
+    --z-index-content: 996;
+    --z-index-overlay: 997;
+    --z-index-fullinfos-nav: 999;
+    --z-index-aside-left: 999;  
+}

@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-nav {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas: "aside-left" ;
+
+}
+
+.aside-left .profile .picture img {
+    border-radius: 500px;
+    width: 100px;
+    height: 5Opx;
+}
+
+.aside-left .fullname p {
+    color: gray;
+    text-align: center;
+}
+
+.aside-left .fullname h1 {
+    text-align: center;
+}
+
+.aside-left .fullnames-us-item li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+.aside-left .fullnames-us-item li:hover {
+    background-color: aliceblue;
+}
+
+.aside-left .fullnames-us-item ul li {
+    height: 50px;
+    text-align: center;
+    border: 0.9px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.aside-left .fullnames-us-item {
+    margin-bottom: 50px;
+}
+
+.aside-left {
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: var(--z-index-aside-left);
+    /* box-shadow: 0 3px 5PX -1px rgb(0 0 0 / 20%);
+    0 5px 8px 0 rgb(0 0 0 /14%);
+    0 1px 14px 0 rgb(0 0 0 / 12%);*/
+}
+
+.content {
+    background-image: url(/assets/images/miel/ux-.jpg);
+    background-size: cover;
+    background-position: fixed;
+    flex: 1;
+    z-index: var(--z-index-content);
+}
+
+.content .fullinfos-nav .old{
+    border-bottom: 0.1px solid yellow;
+    margin-bottom: 15px;
+}
+.content .fullinfos-nav .ad{
+    border-bottom: 0.1px solid yellow;
+    margin-bottom: 15px;
+}
+.content .fullinfos-nav .phone{
+    border-bottom: 0.1px solid yellow;
+    margin-bottom: 15px;
+}
+.content .fullinfos-nav .mail{
+    border-bottom: 0.1px solid yellow;
+    margin-bottom: 15px;
+}
+.content .fullinfos-nav .free{
+    border-bottom: 0.1px solid yellow;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: var(--z-index-overlay);
+    opacity: 0.8;
+}
+
+.usernames-icons .social-icon ul li {
+    padding: 15px;
+    background-color: #ccc;
+}
+
+.fullinfos-nav {
+    color: white;
+    font-weight: bold;
+    height: 100vh;
+    z-index: var(--z-index-fullinfos-nav);
+   /* background-color: #1d1d1d;*/
+    padding-top: 300px;
+    position: relative;
+   text-align: justify;
+
+}
+
+.fullinfos-nav .title-nav h2{
+    font-size: 4rem;
+}
+
+.fullinfos .title-nav {
+    text-align: center;
+    justify-content: center;
+}
+
+.infos-old {
+    text-align: center;
+
+}
+
+.fullinfos p {
+    margin: 0;
+}
+
+.profile .fa-bars {
+    font-size: 2rem;
+}
+
+
+/********************************* MADIA **************************************/
+
+@media screen and (max-widht: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    /* .aside-left {
+        width: 90%;
+    }*/
+}
+
+@media screen and (max-widht: 768px) {
+    .content-nav {
+        display: block;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: "aside-left" "content";
+        
+    }
+
+    .content-nav .aside-left {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile .fa-bars {
+        display: block;
+    }
+
+    .fullinfos-nav .title-nav h2{
+        font-size: 2rem;
+    }
+    
+
+    .content-nav .content {}
+
+}
+
+@media screen and (max-width: 574px) {
+}
+
+@media screen and (max-widht: 427px) {}
+ 
